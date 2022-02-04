@@ -62,6 +62,10 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  # Use ActiveModel has_secure_password
+  gem 'bcrypt', '~> 3.1.7'
+  
 end
 
 group :test do
