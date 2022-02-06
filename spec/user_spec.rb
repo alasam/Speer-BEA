@@ -18,8 +18,6 @@ RSpec.describe User, type: :model do
         password_confirmation: "qwerty"
       )
       expect(user).to_not be_valid
-      print "------------ error ="
-      print user.errors.full_messages
     end
 
     it "should save user if password matches password confirmation" do
@@ -29,8 +27,6 @@ RSpec.describe User, type: :model do
         password_confirmation: "qwerty2"
       )
       expect(user).to_not be_valid
-      print "------------ error ="
-      print user.errors.full_messages
     end
 
     it "should save user if no existing username is already registered" do
@@ -45,8 +41,6 @@ RSpec.describe User, type: :model do
         password_confirmation: "qwerty"
       )
       expect(user2).to be_valid
-      print "------------ error ="
-      print user2.errors.full_messages
     end
 
   end
