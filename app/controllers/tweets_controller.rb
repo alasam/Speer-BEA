@@ -1,6 +1,5 @@
 class TweetsController < ApplicationController
 
-
   def index
     @tweets = Tweet.all
   end
@@ -23,7 +22,7 @@ class TweetsController < ApplicationController
     @tweet = Tweet.new(tweet_params)
    
     if @tweet.save
-      redirect_to '/tweets'
+      redirect_to "/tweets"
     else
       render "new"
     end
@@ -33,10 +32,17 @@ class TweetsController < ApplicationController
     @tweet = Tweet.find(params[:id])
    
     if @tweet.update(tweet_params)
-      redirect_to '/tweets'
+      redirect_to "/tweets"
     else
       render "edit"
     end
+  end
+
+  def destroy
+    @tweet = Tweet.find(params[:id])
+    @tweet.destroy
+   
+    redirect_to tweet_path
   end
 
   private

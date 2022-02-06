@@ -1,4 +1,7 @@
- <% @tweets.each do |t| %>
- <p> <%= t.post %> </p>
- <%= link_to 'Edit', edit_tweet_path(t) %>
- <% end %>
+<% @tweets.each do |t| %>
+  <p> <%= t.post %> </p>
+  <%= link_to "Edit", edit_tweet_path(t) %>
+  <%= button_to 'Delete', tweet_path(t), method: :delete %>
+<% end %>
+
+<%= render "new" %>
