@@ -53,7 +53,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 
   # Add respec-rails
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '~> 4.0.1'
 end
 
 group :development do
