@@ -1,24 +1,31 @@
-# README
+# SPEER BACK-END-ASSESSMENT 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A basic twitter-like skeleton with no/little user interface. Prepared for the Speer Back-End Assessment.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+* User registration/login
+* Tweet feed (must be logged in to see/create/edit/delete tweet)
+* Create new Tweet posts
+* Edit Tweet posts
+* Delete existing Tweet posts
 
-* System dependencies
+## Testing
 
-* Configuration
+* Tested using RSpec
 
-* Database creation
+## Setup
 
-* Database initialization
+1. Run "bundle install" to install dependencies
+2. Run "bin/rake db:reset" to start fresh database
+3. Run "rails server" to start server
+4. Go to "http://localhost:3000/tweets" to start
 
-* How to run the test suite
+## Dependencies
+* Ruby 3.1.0
+* Rails 7.0.1
+* Sqlite3 1.4
+* Rspec-rails 4.0.1
+* Bcrypt 3.1.7
+* Database_cleaner
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
