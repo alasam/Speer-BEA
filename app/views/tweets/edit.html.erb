@@ -1,0 +1,11 @@
+<%= form_for :tweet, url: tweet_path(@tweet), method: :patch do |t| %>
+
+  <p>
+    <%= t.text_area :post %>
+  </p>
+ 
+  <p>
+    <%= t.submit %>
+  </p>
+ 
+<% end %>
