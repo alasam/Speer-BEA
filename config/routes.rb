@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  
+  resources :tweets
+  
+  # Home page
   get 'home/index'
-
-  root to: 'home#index'
 
   # From login page and creating user session
   get '/login' => 'sessions#new'
