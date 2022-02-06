@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     # If username is found and password matches session is created
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to '/'
+      redirect_to '/tweets'
 
     # If account isnt found or password is incorrect, redirect back to login screen
     else

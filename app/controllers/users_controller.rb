@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     # If user successfully created, new session is made and redirected to landing page
     if user.save
       session[:user_id] = user.id
-      redirect_to '/'
+      redirect_to '/tweets'
     else
       # If user was not successfully created, redirected back to signup page
       redirect_to '/registration'
