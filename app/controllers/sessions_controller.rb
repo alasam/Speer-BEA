@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
 
   # Create user session
-  def Create
+  def create
     # Find account by username
     user = User.find_by_username(params[:username])
 
